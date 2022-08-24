@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css" />
+    <title>Sorting Visualizer</title>
+  </head>
+  <body> 
+    <div class="typewritter">
+      <h1 id="h1">Hello, my name is Scott.</h1>
+      <p class="subtitle" id="sub">Welcome to my AlgoVisual website ^.^</p>
+    </div>
+    <div class="container">
+
+      <div class="nav-container">
+
+        <div class = drop-down>
+          <div class="select">
+            <span class="selected" id="selected">Volume</span>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu" id="slider-nav">
+            <li id="option-unchanged"><input type="range" id="slider" min="50" max="150" step="5" value="50"/></li>
+          </ul>
+        </div>
+
+        <div class = drop-down>
+          <div class="select">
+            <span class="selected">Speed</span>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li value="100" id="speed">Slow</li>
+            <li value="50" id="speed">Medium</li>
+            <li value="10" id="speed">Fast</li>
+          </ul>
+        </div>
+
+        <div class = drop-down>
+          <div class="select">
+            <span class="selected">Algorithm</span>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li value="heap" id="algo">Heap Sort</li>
+            <li value="merge" id="algo">Merge Sort</li>
+            <li value="quick" id="algo">Quick Sort</li>
+            <li value="bubble" id="algo">Bubble Sort</li>
+            <li value="insertion" id="algo">Insertion Sort</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bars_container" id="bars_container"></div>
+
+      <div class="btn-container">
+        <div class="two-button">
+          <button id="randomize_array_btn">Shuffle</button>
+          <button id="sort_btn">Sort</button>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="/index.js"></script>
+  </body>
+</html>
